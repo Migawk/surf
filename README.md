@@ -1,0 +1,11 @@
+Mighty backend for [Magic Mirror](https://github.com/Migawk/MagicMirror).
+
+As caching used MongoDB.
+
+Hono + Bun + TypeScript
+
+Todo:
+[ ] add calendar;
+[ ] status of websites;
+[ ] news ( currently can't find any apis );
+[ ] add middlewares
