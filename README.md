@@ -6,6 +6,7 @@ Hono + Bun + TypeScript
 
 Todo:
 [ ] add calendar;
-[ ] status of websites;
+[x] status of websites;
 [ ] news ( currently can't find any apis );
 [ ] add middlewares
+[ ] add tests
