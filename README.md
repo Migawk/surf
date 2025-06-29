@@ -8,5 +8,5 @@ Todo:
 [ ] add calendar;
 [x] status of websites;
 [ ] news ( currently can't find any apis );
-[ ] add middlewares
+[x] add throttler-middleware
 [ ] add tests
