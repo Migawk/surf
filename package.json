@@ -1,7 +1,8 @@
 {
   "name": "surf",
   "scripts": {
-    "dev": "bun run --hot src/main.ts"
+    "dev": "bun run --hot src/main.ts",
+    "test": "vitest"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.7.0",
@@ -9,6 +10,7 @@
     "hono": "^4.8.3",
     "hono-rate-limiter": "^0.4.2",
     "mongoose": "^8.16.1",
+    "vitest": "^3.2.4",
     "zod": "^3.25.67"
   },
   "devDependencies": {
