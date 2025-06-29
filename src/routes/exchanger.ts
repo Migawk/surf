@@ -35,12 +35,10 @@ exchangerRoute.get(
     const dbRes = await getCurrency(base_name);
     if (!dbRes) {
       await writeCurrency(responseObj.data);
-      console.log(1)
       return c.json(dbRes);
     }
 
     if (dbRes.lastUpdate + 1000 * 60 * 60 * 6 < Date.now()) {
-      console.log(2)
       await deleteSingleCurrency(base_name);
       await writeCurrency(responseObj.data);
     }
