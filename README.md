@@ -9,4 +9,4 @@ Todo:
 [x] status of websites;
 [ ] news ( currently can't find any apis );
 [x] add throttler-middleware
-[ ] add tests
+[x] add tests
