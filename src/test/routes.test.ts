@@ -9,6 +9,12 @@ const weatherResponse = z.object({
   lastUpdate: z.number()
 })
 
+const statusResponse = z.array(z.object({
+  site: z.string(),
+  status: z.boolean(),
+  ping: z.number()
+}))
+
 describe("Routes", () => {
   test("Weather Stockholm", async () => {
     const res = await app.request("/weather/Stockholm")
@@ -17,4 +23,12 @@ describe("Routes", () => {
     expect(res.status).toBe(200)
     expect(validBody.success).toBe(true)
   });
+
+  test("Status", async () => {
+    const res = await app.request("/status")
+    const validBody = statusResponse.safeParse(await res.json())
+
+    expect(res.status).toBe(200)
+    expect(validBody.success).toBe(true)
+  })
 });
